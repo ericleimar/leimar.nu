@@ -1,31 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
-	<head>
-		{{ template "partials/head.html" . }}
-	</head>
-	<body>
-		<header>
-			{{ template "partials/header.html" . }}
-		</header>
-		<nav>
-			{{ template "partials/menu.html" .Site.Menus.main }}
-		</nav>
-		<main>
-      {{ range .Site.Sections.start.Pages.ByWeight }}
-			<article>
-				<header>
-					<h1>{{ .Title }}</h1>
-				</header>
-				{{ .Content }}
-				<footer></footer>
-			</article>
-      {{ end }}
-			<aside>
-			</aside>
-		</main>
-		<footer>
-			{{ template "partials/footer.html" . }}
-		</footer>
-		{{ template "partials/foot.html" . }}
-	</body>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body id="page-top">
+
+        {{ partial "nav.html" . }}
+
+        {{ partial "hero.html" . }}
+        {{ partial "about.html" . }}
+        {{ partial "services.html" . }}
+        {{ partial "portfolio.html" . }}
+        {{ partial "contact.html" . }}
+
+        {{ partial "modals.html" . }}
+        {{ partial "js.html" . }}
+    </body>
 </html>

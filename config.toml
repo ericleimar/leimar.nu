@@ -1,0 +1,93 @@
+baseurl = "http://leimar.nu/"
+languageCode = "en-us"
+title = "Eric Leimar"
+# theme = "hugo-creative-theme"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more informtion take a look at the README.
+
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Eric"
+	description = "Your description"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Eric Leimar"
+
+		[params.navigation.links]
+			about     = "About"
+			services  = "Services"
+			portfolio = "Portfolio"
+			contact   = "Contact"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Eric Leimar"
+		subtitle   = "The truth is incontrovertible. Malice may attack it. Ignorance may deride it. But in the end. There it is. - Sir Winston Churchill"
+		buttonText = "Find out more"
+
+
+	# About section
+	[params.about]
+		headline    = "Description title"
+		description = "This text is for describing the general contents of the website. For the time being imagine something great."
+		buttonText  = "Useless button atm"
+
+
+	# Service section
+	[params.services]
+		headline = "Some icons to sum things up"
+
+        [[params.services.list]]
+            icon = "fa-diamond"
+            title = "Premium"
+            description = "Only the best deserve the best"
+
+        [[params.services.list]]
+			icon = "fa-paper-plane"
+			title = "Airborne"
+			description = "Seeing the bigger picture from above always gives perspective"
+
+		[[params.services.list]]
+            icon = "fa-newspaper-o"
+            title = "Up to Date"
+            description = "Well.. at least some of the time"
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "Made with Love"
+            description = "Apparently, you have to make your websites with love these days..."
+
+
+    # Portfolio modals
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+
+	# Contact section
+	[params.contact]
+		headline = "Call me maybe"
+		description = "Or maybe not. Choice is yours."
+		phone = "Not that easy, it would seem"
+		email = "name@surname.nu"
