@@ -19,8 +19,8 @@ title = "Eric Leimar"
 
 	# To provide some metadata for search engines feel free to add a few
     # information about you and your website.
-	name = "Eric"
-	description = "Your description"
+	name = "Leimar"
+	description = "The Leimar way of life"
 
 	# The path must be relative to the static folder
 	favicon = "favicon.ico"
@@ -28,7 +28,7 @@ title = "Eric Leimar"
 
 	# Navigation
 	[params.navigation]
-		brand = "Eric Leimar"
+		brand = "Leimar"
 
 		[params.navigation.links]
 			about     = "About"
@@ -40,16 +40,16 @@ title = "Eric Leimar"
 	# Hero section
 	[params.hero]
 		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan     = "Eric Leimar"
-		subtitle   = "The truth is incontrovertible. Malice may attack it. Ignorance may deride it. But in the end. There it is. - Sir Winston Churchill"
-		buttonText = "Find out more"
+		slogan     = "The Leimar way of life"
+		subtitle   = "All that is gold does not glitter, not all those who wander are lost; the old that is strong does not wither, deep roots are not reached by the frost. - J.R.R. Tolkien"
+		buttonText = "Scroll down, why don't ya?"
 
 
 	# About section
 	[params.about]
-		headline    = "Description title"
+		headline    = "About"
 		description = "This text is for describing the general contents of the website. For the time being imagine something great."
-		buttonText  = "Useless button atm"
+		buttonText  = "Scroll back up"
 
 
 	# Service section
